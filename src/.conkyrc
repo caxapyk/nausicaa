@@ -1,0 +1,23 @@
+conky.config = {
+    double_buffer = true,
+    update_interval = 1.0,
+    no_buffers = true,
+    own_window = false,
+    alignment = 'bottom_right',
+    gap_x = 5,
+    gap_y = 40,
+    background = false,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    use_xft = true,
+    xftalpha = 0.75,
+    font = 'Droid Sans:size=8',
+    color1 = '#b5b5b5',
+    color2 = '#ffffff'
+}
+
+conky.text = [[
+    ${color2} ${alignr} ~$nodename / $uptime_short
+    ${color1}RAM: ${color2}$memperc% ($mem)${color1}   CPU: ${color2}$cpu% (${color2}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input | cut -c-2 }°C)${color1}   FS: ${color2}${fs_used_perc /}% (${fs_free /} free)
+]]
