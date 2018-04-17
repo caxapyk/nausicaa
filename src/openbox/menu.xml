@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="settings-group" label="Settings">
+  <item label="Manage printers with Cups">
+    <action name="Execute">
+      <command>xdg-open http://localhost:631/</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="steam-group" label="Steam">
+  <item label="Steam">
+    <action name="Execute">
+      <command>steam</command>
+    </action>
+  </item>
+  <item label="Counter-Strike 1.6">
+    <action name="Execute">
+      <command>steam steam://rungameid/10</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox">
+  <item label="Terminal">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </item>
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox</command>
+    </action>
+  </item>
+  <item label="Thunderbird">
+    <action name="Execute">
+      <command>thunderbird</command>
+    </action>
+  </item>
+  <item label="VSCode">
+    <action name="Execute">
+      <command>code</command>
+    </action>
+  </item>
+  <item label="Teamviewer">
+    <action name="Execute">
+      <command>teamviewer</command>
+    </action>
+  </item>
+  <item label="Transmission">
+    <action name="Execute">
+      <command>transmission-daemon</command>
+    </action>
+    <action name="Execute">
+      <command>xdg-open http://localhost:9091/</command>
+    </action>
+  </item>
+  <item label="Gimp">
+    <action name="Execute">
+      <command>gimp</command>
+    </action>
+  </item>
+  <menu id="steam-group"/>
+  <menu id="settings-group"/>
+  <separator />
+  <item label="Выход из Openbox">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
